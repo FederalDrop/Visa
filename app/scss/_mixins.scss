@@ -1,0 +1,40 @@
+@mixin main_btn {
+	background: #FFEA00;
+	border: 1px solid #FFEA00;
+	border-radius: 28.5px;
+	color: #3D3D3D;
+	text-align: center;
+	font-weight: 600;
+	filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.2));
+	transition: all ease 0.3s;
+	cursor: pointer;
+	padding: 17px 38px;
+	&:hover {
+		background: #fff;
+		color: $brendColor;
+		transition: all ease 0.3s;
+	}
+}
+
+@mixin socialIcon {
+	border-radius: 100px;
+	border: solid 2px $textColor;
+	background: $textColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 62px;
+	height: 62px;
+	transition: all ease 0.3s;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+	img {
+		width: 25px;
+		display: block;
+	}
+
+	&:hover {
+		border: solid 2px $brendColor;
+		transition: all ease 0.3s;
+	}
+}

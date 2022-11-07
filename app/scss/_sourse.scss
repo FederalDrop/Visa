@@ -1,0 +1,227 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	cursor: pointer;
+	outline: 0 none !important;
+
+}
+
+body::-webkit-scrollbar {
+	width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+.slick-slide img:focus {
+	outline: none !important;
+}
+
+.slick-slide:focus {
+	outline: none !important;
+}
+
+.towar-box-sec5 a {
+	outline: none !important;
+}
+
+.slick-slide {
+	outline: none !important;
+}
+
+.slick-slide p {
+	outline: none !important;
+}
+
+.slick-slide a {
+	outline: none !important;
+}
+
+.slick-slide div {
+	outline: none !important;
+}
+
+.slick-track {
+	outline: none !important;
+}
+
+input {
+	outline: 0 none !important;
+
+	font-family: $mainFont
+}
+
+input[type=text] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type=tel] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type=email] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type=submit] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+button {
+	font-family: $mainFont;
+}
+
+select {
+	cursor: pointer;
+	outline: 0 none !important;
+	font-family: $mainFont;
+}
+
+textarea {
+	outline: 0 none !important;
+	font-family: $mainFont;
+}
+
+body {
+	background: #fff;
+	font-family: $mainFont;
+	color: #3D3D3D;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $mainFont;
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+.app {
+	overflow: hidden;
+	min-width: 320px;
+}
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+.main_btn {
+	background: #FFEA00;
+	border: 2px solid #FFEA00;
+	border-radius: 28.5px;
+	color: #3D3D3D;
+	text-align: center;
+	font-weight: 600;
+	filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+	transition: all ease 0.3s;
+	cursor: pointer;
+	padding: 15px 41px;
+	font-size: 20px;
+	&:hover {
+		background: #fff;
+		transition: all ease 0.3s;
+	}
+}
+.visa, .news, .pair, .reviews, .smi, .post_slider_section, .history, .usa_visa {
+	padding: 100px 0;
+}
+.work, .team, .props, .video {
+	padding: 100px 0;
+	background: #242424;
+	color: #FFFFFF;
+}
+.main_news, .about, .contacts, .main_reviews, .tourism {
+	padding: 0 0 100px 0;
+}
+.main_title {
+	font-weight: 600;
+	font-size: 36px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.main_line {
+	width: 111px;
+	height: 2px;
+	background: #FFEA00;
+	margin: 35px 0 60px 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.__body_up_btn:hover {
+		background: #3D3D3D;
+		border: 1px solid #3D3D3D;
+		color: #FFFFFF;
+		transition: all 0.3s ease;
+	}
+	.__bodu_up_link:hover, .usa_link:hover {
+		color: #FFEA00;
+		transition: all 0.3s ease;
+	}
+	.__body_up_social img:hover {
+		border: 1px solid #FFEA00;
+		transition: all 0.3s ease;
+	}
+	.__body_down_link:hover {
+		background: #FFEA00;
+		border: 1px solid #3D3D3D;
+		transition: all 0.3s ease;
+	}
+	.work_social_item img:hover, .__social_item img:hover {
+		border: 1px solid #FFEA00;
+		transition: all 0.3s ease;
+	}
+	.footer_nav_link:hover {
+		color: #FFFFFF;
+		transition: all 0.3s ease;
+	}
+	.footer_contact_link:hover {
+		color: rgba(255, 255, 255, 0.54);
+		transition: all 0.3s ease;
+	}
+	.contacts_item_link:hover {
+		color: #787878;
+		transition: all 0.3s ease;
+	}
+	
+}
