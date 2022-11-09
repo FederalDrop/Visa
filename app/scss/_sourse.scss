@@ -163,13 +163,17 @@ ul {
 		transition: all ease 0.3s;
 	}
 }
-.visa, .news, .pair, .reviews, .smi, .post_slider_section, .history, .usa_visa {
+.visa, .news, .pair, .reviews, .smi, .post_slider_section, .history, .usa_visa, .stage, .university, .migration_programs {
 	padding: 100px 0;
 }
-.work, .team, .props, .video {
+.work, .team, .props, .video, .vac {
 	padding: 100px 0;
 	background: #242424;
 	color: #FFFFFF;
+}
+.stage_black, .programs, .reviews_black {
+	padding: 100px 0;
+	background: #242424;
 }
 .main_news, .about, .contacts, .main_reviews, .tourism {
 	padding: 0 0 100px 0;

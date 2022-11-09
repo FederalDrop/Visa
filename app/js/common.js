@@ -79,7 +79,70 @@ $(function () {
 		// 	},
 		// ]
 	});
-
+	$('.direction_slider').slick({
+		speed: 1000,
+		adaptiveHeight: true,
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		dots: true,
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1200,
+		// 		settings: {
+		// 			autoplay: true,
+		// 			autoplaySpeed: 3000,
+		// 		}
+		// 	},
+		// ]
+	});
+	$('.vac_slider').slick({
+		speed: 1000,
+		adaptiveHeight: true,
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		dots: true,
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1200,
+		// 		settings: {
+		// 			autoplay: true,
+		// 			autoplaySpeed: 3000,
+		// 		}
+		// 	},
+		// ]
+	});
+	$('.university_slider').slick({
+		speed: 1000,
+		adaptiveHeight: true,
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		dots: true,
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1200,
+		// 		settings: {
+		// 			autoplay: true,
+		// 			autoplaySpeed: 3000,
+		// 		}
+		// 	},
+		// ]
+	});
+	$('.programs_slider').slick({
+		speed: 1000,
+		adaptiveHeight: true,
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		dots: true,
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1200,
+		// 		settings: {
+		// 			autoplay: true,
+		// 			autoplaySpeed: 3000,
+		// 		}
+		// 	},
+		// ]
+	});
 });
 
 
