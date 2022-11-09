@@ -96,7 +96,8 @@
 								<p class="__info_item_text">50+ партнеров</p>
 							</div>
 						</div>
-						<button class="main_btn head_info_btn">Оставить заявку</button>
+						<button class="main_btn head_info_btn air-open-btn" data-popup-current="callback_form">Оставить
+							заявку</button>
 					</div>
 					<div class="head_slider">
 						<div class="head_slider_item">
@@ -244,7 +245,7 @@
 								voluptas vel obcaecati.
 							</p>
 							<div class="reviews_btn_container">
-								<button class="riviews_btn">Читать полностью</button>
+								<button class="riviews_btn air-open-btn" data-popup-current="review">Читать полностью</button>
 							</div>
 						</div>
 						<div class="reviews_slider_item">
@@ -694,7 +695,8 @@
 						</div>
 					</div>
 					<div class="news_btn_container">
-						<button class="main_btn pair_btn">Хочу стать партнером</button>
+						<button class="main_btn pair_btn air-open-btn" data-popup-current="callback_form_partners">Хочу стать
+							партнером</button>
 					</div>
 				</div>
 			</section>
@@ -796,6 +798,99 @@
 					<p class="__web_text">Разработчик:</p>
 					<a href="#" class="__web_link">spacesdev.space</a>
 				</div>
+			</div>
+		</div>
+		<div class="popup-air video_popup" data-air="video">
+			<div class="video-popup">
+				<div class="main-wrapper">
+					<video class="video-roomtour" controls="controls">
+						<source src="video/210329_06B_Bali_1080p_013.mp4" data-src="video/demo.mp4"
+							type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						Тег video не поддерживается вашим браузером.
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="popup_form_body popup-air" data-air="callback_form">
+			<div class="popup_form">
+				<form action="#">
+					<p class="popup_form_title">Заказать обратный звонок</p>
+					<div class="form_line"></div>
+					<p class="popup_form_text">Оставьте свои контакты, наш менеджер свяжется с вами в течении 15 минут и ответит
+						на ваши вопросы</p>
+					<div class="popup_form_item">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<div class="form_input_icon"><img src="img/_src/svg/form_icon_user.svg" alt="name"></div>
+					</div>
+					<div class="popup_form_item">
+						<input type="tel" name="phone" placeholder="Номер телефона">
+						<div class="form_input_icon"><img src="img/_src/svg/form_icon_phone.svg" alt="tel"></div>
+					</div>
+					<div class="popup_form_item">
+						<p>Нажимая кнопку, вы соглашаетесь с <a href="politics.html" target="_blank">политикой
+								конфиденциальности</a></p>
+					</div>
+					<div class="popup_form_item">
+						<input type="submit" name="btn" value="Отправить заявку"></input>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="popup_form_body popup-air" data-air="callback_form_partners">
+			<div class="popup_form">
+				<form action="#">
+					<p class="popup_form_title">Хочу стать партнером</p>
+					<div class="form_line"></div>
+					<p class="popup_form_text">Оставьте свои контакты, наш менеджер свяжется с вами в течении 15 минут и ответит
+						на ваши вопросы</p>
+					<div class="popup_form_item">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<div class="form_input_icon"><img src="img/_src/svg/form_icon_user.svg" alt="name"></div>
+					</div>
+					<div class="popup_form_item">
+						<input type="tel" name="phone" placeholder="Номер телефона">
+						<div class="form_input_icon"><img src="img/_src/svg/form_icon_phone.svg" alt="tel"></div>
+					</div>
+					<div class="popup_form_item">
+						<input type="tel" name="phone" placeholder="Название компании">
+						<div class="form_input_icon"><img src="img/_src/svg/form_icon_home.svg" alt="home"></div>
+					</div>
+					<div class="popup_form_item">
+						<p>Нажимая кнопку, вы соглашаетесь с <a href="politics.html" target="_blank">политикой
+								конфиденциальности</a></p>
+					</div>
+					<div class="popup_form_item">
+						<input type="submit" name="btn" value="Отправить заявку"></input>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="popup-air reviews_popup_item" data-air="review">
+			<div class="reviews_popup">
+				<div class="reviews_svg_abs"><svg width="48" height="84" viewBox="0 0 48 84" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<circle cx="56" cy="28" r="56" fill="#3D3D3D" />
+					</svg>
+				</div>
+				<div class="reviews_slider_content">
+					<div class="reviews_slider_img"><img src="img/_src/reviews_img_3.jpg" alt="img"></div>
+					<div class="reviews_slider_info">
+						<p class="reviews_popup_name">Мосейчук И.</p>
+						<div class="reviews_info">
+							<p class="reviews_popup_city">Алмата</p>
+							<div class="reviews_popup_age">24 года</div>
+						</div>
+						<p class="reviews_popup_trip">Уехала в 2021г</p>
+					</div>
+				</div>
+				<h4 class="riviews_popup_title">Поездка в США</h4>
+				<p class="reviews_popup_text">В туризм нас привела любовь к путешествиям, мы хотели чтобы наши клиенты
+					осуществляли свою мечту, увидеть другую страну, благодаря нам. И свой путь мы начали в январе 2017 году с
+					открытия небольшого агентства, которое занималось только визами в США, в котором мы сами работали в качестве
+					менеджеров.
+
+					мы хотели чтобы наши клиенты осуществляли свою мечту, увидеть другую страну, благодаря нам. И
+				</p>
 			</div>
 		</div>
 
