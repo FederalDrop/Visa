@@ -1,11 +1,11 @@
 
 $(function () {
-	$('.reviews_slider').slick({
+	$('.head_slider').slick({
 		speed: 1000,
 		adaptiveHeight: true,
 		slidesToScroll: 1,
 		dots: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		// responsive: [
 		// 	{
 		// 		breakpoint: 1200,
@@ -15,6 +15,28 @@ $(function () {
 		// 		}
 		// 	},
 		// ]
+	});
+	$('.reviews_slider').slick({
+		speed: 1000,
+		adaptiveHeight: true,
+		slidesToScroll: 1,
+		dots: true,
+		slidesToShow: 3,
+		responsive: [
+			{
+				breakpoint: 950,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+		]
 	});
 	$('.team_slider').slick({
 		speed: 1000,
@@ -22,15 +44,28 @@ $(function () {
 		slidesToScroll: 1,
 		dots: true,
 		slidesToShow: 3,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 950,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 570,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+		]
 	});
 	$('.smi_slider').slick({
 		speed: 1000,
@@ -38,15 +73,28 @@ $(function () {
 		slidesToScroll: 1,
 		dots: true,
 		slidesToShow: 4,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 950,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+		]
 	});
 	$('.post_slider').slick({
 		speed: 1000,
@@ -54,30 +102,44 @@ $(function () {
 		slidesToScroll: 1,
 		dots: true,
 		slidesToShow: 3,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 880,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 570,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+		]
 	});
 	$('.history_slider').slick({
 		speed: 1000,
 		adaptiveHeight: true,
 		slidesToScroll: 1,
 		slidesToShow: 2,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 680,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					dots: true,
+				}
+			},
+		]
 	});
 	$('.direction_slider').slick({
 		speed: 1000,
@@ -142,6 +204,23 @@ $(function () {
 		// 		}
 		// 	},
 		// ]
+	});
+	$(document).scroll(function (e) {
+		$(window).scrollTop() > 50 ? $('.header_body_up').addClass('__body_up') : $('.header_body_up').removeClass('__body_up');
+	});
+});
+
+//для якорей
+jQuery(function ($) {
+	$('a[href*="#"]').on('click.smoothscroll', function (e) {
+		var hash = this.hash, _hash = hash.replace(/#/, ''), theHref = $(this).attr('href').replace(/#.*/, '');
+		if (theHref && location.href.replace(/#.*/, '') != theHref) return;
+		var $target = _hash === '' ? $('body') : $(hash + ', a[name="' + _hash + '"]').first();
+		if (!$target.length) return;
+		e.preventDefault();
+		$('html, body').stop().animate({ scrollTop: $target.offset().top - 0 }, 800, 'swing', function () {
+			window.location.hash = hash;
+		});
 	});
 });
 

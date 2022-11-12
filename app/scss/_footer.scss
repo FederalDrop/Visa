@@ -50,3 +50,64 @@
 .footer_pay_img {
 	margin: 0 0 0 40px;
 }
+.footer_contact_text {
+	color: #FFFFFF;
+}
+@media only screen and (max-width: 950px){
+	.footer_items {
+		flex-wrap: wrap;
+	}
+	.footer_contacts_items {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 30px 0 0 0;
+	}
+	.footer_contact_item {
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 770px){
+	.footer_contacts_items {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.footer_contact_item {
+		width: 50%;
+		justify-content: center;
+		&:last-child {
+			margin: 20px 0 0 0;
+		}
+	}
+}
+@media only screen and (max-width: 580px){
+	.footer_logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 20px 0;
+	}
+}
+@media only screen and (max-width: 520px){
+	.footer_pay {
+		flex-wrap: wrap;
+	}
+	.footer_pay_img {
+		width: 50%;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 20px 0;
+	}
+}
+@media only screen and (max-width: 480px){
+	.footer_contact_item {
+		width: 100%;
+		margin: 20px 0 0 0;
+		justify-content: flex-start;
+	}
+	.footer_contacts_items {
+		margin: 0;
+	}
+}

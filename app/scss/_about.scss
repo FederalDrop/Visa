@@ -1,6 +1,7 @@
 .about_items {
 	display: flex;
-	justify-content: space-between;
+	width: calc(100% + 40px);
+	margin: 0 0 0 -20px;
 }
 .about_item_title {
 	font-weight: 600;
@@ -24,6 +25,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	height: 100%;
 }
 .history_item_number {
 	font-weight: 600;
@@ -81,4 +83,27 @@
 }
 .boss_subtitle {
 	color: rgba(61, 61, 61, 0.69);
+}
+@media only screen and (max-width: 1050px){
+	.about_items {
+		width: calc(100% + 20px);
+		margin: 0 0 0 -10px;
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width: 950px){
+	.about_items {
+		justify-content: center;
+	}
+	.boss_abs {
+		display: none;
+	}
+	.history_slider {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 380px){
+	.history_item_title {
+		font-size: 22px;
+	}
 }

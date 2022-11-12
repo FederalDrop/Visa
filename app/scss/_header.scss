@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 99999;
+	z-index: 999;
 	background: #FFFFFF;
 	width: 100%;
 	filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.15));
@@ -11,7 +11,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0;
+	height: 70px;
+	max-height: 70px;
+	transition: all 0.3s ease;
+}
+.header_body_up.__body_up {
+	max-height: 0px;
+	opacity: 0;
 }
 .__body_up_list, .__up_geo_item, .__body_up_socials, .body_down_list {
 	display: flex;
@@ -23,7 +29,7 @@
 	color: #3D3D3D;
 	box-shadow: $mainShadow;
 	border: 1px solid #3D3D3D;
-	border-radius: 17.5px;
+	border-radius: 100px;
 	padding: 9px 15px;
 	transition: all 0.3s ease;
 	&:first-child {
@@ -72,7 +78,6 @@
 	& img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
 	}
 }
 .body_down_list li {
@@ -95,13 +100,95 @@
 	align-items: center;
 	color: #3D3D3D;
 	background: #FFEA00;
-	border: 2px solid #FFEA00;
+	border: 1px solid #FFEA00;
 	border-radius: 22px;
 	padding: 8px 22px;
 	box-shadow: $mainShadow;
+	transition: all 0.3s ease;
 }
 .__down_phone_text {
 	font-weight: 500;
 	font-size: 18px;
 	margin: 0 0 0 9px;
+}
+.header_burger {
+	display: none;
+}
+@media only screen and (max-width: 1100px){
+	.__body_up_list li {
+		margin: 0 25px 0 0;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.__body_down_nav, .header_body_up {
+		display: none;
+	}
+	.header_burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+	}
+	.header_burger span {
+		position: absolute;
+		background-color: #000;
+		right: 0;
+		width: 70%;
+		height: 3px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+		border-radius: 2px;
+	}
+	.header_burger:before,
+	.header_burger:after {
+		content: '';
+		background-color: #000;
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+		border-radius: 2px;
+	}
+	.header_burger:before {
+		top: 0;
+	}
+	.header_burger:after {
+		bottom: 0;
+	}
+	.header_burger.active span {
+		transform: scale(0);
+	}
+	.header_burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header_burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+}
+@media only screen and (max-width: 580px){
+	.__body_down_logo {
+		width: 80px;
+		height: 40px;
+	}
+	.__down_phone_text {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 0 9px;
+  }
+}
+@media only screen and (max-width: 390px){
+	.__body_down_phone {
+		padding: 5px 10px;
+	}
+	.__down_phone_text {
+		margin: 0 0 0 5px;
+	}
+	.__body_down_logo {
+		width: 60px;
+		height: 30px;
+	}
 }

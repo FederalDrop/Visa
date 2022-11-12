@@ -174,3 +174,13 @@
     font-size: 18px;
     line-height: 122%;
 }
+.video_popup {
+    width: 90%;
+    height: 90%;
+    max-height: 700px;
+    & iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
