@@ -1,3 +1,124 @@
 .reviews_title_abs.white {
 	color: #FFFFFF;
 }
+.programs_popup {
+	max-width: 600px;
+	background: #F7F7F7;
+	border-radius: 15px;
+}
+.programs_popup_img {
+	height: 220px;
+	position: relative;
+	&>img {
+		width: 100%;
+		height: 100%;
+		border-radius: 15px 15px 0 0;
+	}
+}
+.programs_popup_abs {
+	position: absolute;
+	background: linear-gradient(180deg, rgba(41, 47, 69, 0) 0%, rgba(41, 47, 69, 0.84) 100%);
+	bottom: 0;
+	padding: 0 15px 15px 15px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.__popup_abs_item {
+	display: flex;
+	align-items: center;
+}
+.__popup_abs_img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px 0 0;
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.__popup_abs_title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+}
+.__popup_abs_price {
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: rgba(255, 255, 255, 0.47);
+	background: #242424;
+	border-radius: 17.5px;
+	padding: 6px 20px;
+	margin: 20px 0 0 0;
+	& span {
+		font-weight: 500;
+		font-size: 14px;
+		color: #FFFFFF;
+	}
+}
+.programs_popup_wrapper {
+	padding: 20px 15px 35px 15px;
+}
+.programs_popup_title {
+	font-weight: 600;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+.programs_popup_text {
+	color: rgba(61, 61, 61, 0.69);
+	margin: 15px 0 20px 0;
+}
+.programs_popup_term {
+	font-weight: 500;
+	color: rgba(61, 61, 61, 0.59);
+	& span {
+		font-weight: 600;
+		color: #FFC906;
+	}
+}
+.programs_popup_doc {
+	font-weight: 500;
+	color: rgba(61, 61, 61, 0.59);
+	margin: 10px 0;
+}
+.programs_popup_list {
+	padding: 0 0 0 20px;
+}
+.programs_popup_li {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #878787;
+	margin: 0 0 5px 0;
+	list-style-image: url('../img/_src/test.png');
+}
+.__popup_btn_wrapper {
+	margin: 30px 0 0 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.__popup_btn {
+	font-size: 16px;
+	padding: 12px 21px;
+}
+.programs_popup_info {
+	height: 350px;
+	padding: 0 20px 0 0;
+	overflow-y: scroll;
+}
+.programs_popup_info::-webkit-scrollbar {
+  width: 2px;               /* ширина scrollbar */
+}
+.programs_popup_info::-webkit-scrollbar-track {
+  background: #D9D9D9;  
+	border-radius: 20px;      /* цвет дорожки */
+}
+.programs_popup_info::-webkit-scrollbar-thumb {
+  background-color: rgb(61, 61, 61, 0.6);    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+}

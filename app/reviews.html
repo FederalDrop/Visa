@@ -49,11 +49,12 @@
 						<a href="#" class="__body_up_social" target="_blank"><img src="img/_src/svg/icon_wa.svg" alt="wa"></a>
 					</div>
 					<div class="__body_up_geo">
-						<div class="__up_geo_item">
-							<div class="__geo_item_pin"><img src="img/_src/svg/map_pin.svg" alt="pin"></div>
-							<p class="__geo_item_text">Астана</p>
-							<div class="__geo_item_arrow"><img src="img/_src/svg/geo_arrow_down.svg" alt="arrow"></div>
-						</div>
+						<div class="__geo_item_pin"><img src="img/_src/svg/map_pin.svg" alt="pin"></div>
+						<select name="geo">
+							<option value="Aстана">Aстана</option>
+							<option value="Актобе">Aктобе</option>
+							<option value="Тараз">Тараз</option>
+						</select>
 					</div>
 				</div>
 				<div class="header_body_down">
@@ -113,7 +114,7 @@
 								voluptas vel obcaecati.
 							</p>
 							<div class="reviews_btn_container">
-								<button class="riviews_btn blue">Читать полностью</button>
+								<button class="riviews_btn air-open-btn blue" data-popup-current="review">Читать полностью</button>
 							</div>
 						</div>
 						<div class="reviews_slider_item">
@@ -140,7 +141,7 @@
 								voluptas vel obcaecati.
 							</p>
 							<div class="reviews_btn_container">
-								<button class="riviews_btn">Читать полностью</button>
+								<button class="riviews_btn air-open-btn" data-popup-current="review">Читать полностью</button>
 							</div>
 						</div>
 						<div class="reviews_slider_item">
@@ -167,7 +168,7 @@
 								voluptas vel obcaecati.
 							</p>
 							<div class="reviews_btn_container">
-								<button class="riviews_btn yellow">Читать полностью</button>
+								<button class="riviews_btn air-open-btn yellow" data-popup-current="review">Читать полностью</button>
 							</div>
 						</div>
 						<div class="reviews_slider_item">
@@ -194,7 +195,7 @@
 								voluptas vel obcaecati.
 							</p>
 							<div class="reviews_btn_container">
-								<button class="riviews_btn blue">Читать полностью</button>
+								<button class="riviews_btn air-open-btn blue" data-popup-current="review">Читать полностью</button>
 							</div>
 						</div>
 						<div class="reviews_slider_item">
@@ -221,7 +222,7 @@
 								voluptas vel obcaecati.
 							</p>
 							<div class="reviews_btn_container">
-								<button class="riviews_btn">Читать полностью</button>
+								<button class="riviews_btn air-open-btn" data-popup-current="review">Читать полностью</button>
 							</div>
 						</div>
 						<div class="reviews_slider_item">
@@ -248,7 +249,7 @@
 								voluptas vel obcaecati.
 							</p>
 							<div class="reviews_btn_container">
-								<button class="riviews_btn yellow">Читать полностью</button>
+								<button class="riviews_btn air-open-btn yellow" data-popup-current="review">Читать полностью</button>
 							</div>
 						</div>
 					</div>
@@ -668,15 +669,10 @@
 			</div>
 		</div>
 		<div class="popup-air video_popup" data-air="video">
-			<div class="video-popup">
-				<div class="main-wrapper">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen>
-					</iframe>
-				</div>
-			</div>
+			<iframe width="auto" height="auto" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player"
+				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			</iframe>
 		</div>
 		<div class="popup_form_body popup-air" data-air="callback_form_reviews">
 			<div class="popup_form">
@@ -705,6 +701,33 @@
 						<input type="submit" name="btn" value="Отправить заявку"></input>
 					</div>
 				</form>
+			</div>
+		</div>
+		<div class="popup-air reviews_popup_item" data-air="review">
+			<div class="reviews_popup">
+				<div class="reviews_svg_abs"><svg width="48" height="84" viewBox="0 0 48 84" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<circle cx="56" cy="28" r="56" fill="#3D3D3D" />
+					</svg>
+				</div>
+				<div class="reviews_slider_content">
+					<div class="reviews_slider_img"><img src="img/_src/reviews_img_3.jpg" alt="img"></div>
+					<div class="reviews_slider_info">
+						<p class="reviews_popup_name">Мосейчук И.</p>
+						<div class="reviews_info">
+							<p class="reviews_popup_city">Алмата</p>
+							<div class="reviews_popup_age">24 года</div>
+						</div>
+						<p class="reviews_popup_trip">Уехала в 2021г</p>
+					</div>
+				</div>
+				<h4 class="riviews_popup_title">Поездка в США</h4>
+				<p class="reviews_popup_text">В туризм нас привела любовь к путешествиям, мы хотели чтобы наши клиенты
+					осуществляли свою мечту, увидеть другую страну, благодаря нам. И свой путь мы начали в январе 2017 году с
+					открытия небольшого агентства, которое занималось только визами в США, в котором мы сами работали в качестве
+					менеджеров.
+					мы хотели чтобы наши клиенты осуществляли свою мечту, увидеть другую страну, благодаря нам. И
+				</p>
 			</div>
 		</div>
 

@@ -179,7 +179,7 @@
 .programs_info_link {
 	font-size: 14px;
 	color: #878787;
-	list-style-type: disc;
+	list-style-image: url('../img/_src/test.png');
 	margin: 0 0 7px 0;
 	&:last-child {
 		margin: 0;
@@ -194,4 +194,10 @@
 .programs_btn {
 	font-size: 16px;
 	padding: 12px 46px;
+}
+.university_btn_wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0 0 0;
+	width: 100%;
 }

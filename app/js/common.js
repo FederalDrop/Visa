@@ -1,8 +1,18 @@
 
 $(function () {
+	function header_mobile() {
+		let header = $('.header');
+		let burgerMenu = $('.header_burger');
+		burgerMenu.click(function () {
+			header.toggleClass('active');
+		});
+	};
+	header_mobile();
+	// $('.header_burger').click(function (event) {
+	// 	$('.header_burger,.header_mobile').toggleClass('active');
+	// });
 	$('.head_slider').slick({
 		speed: 1000,
-		adaptiveHeight: true,
 		slidesToScroll: 1,
 		dots: true,
 		slidesToShow: 1,

@@ -2,6 +2,16 @@
 	display: flex;
 	justify-content: space-between;
 }
+.contacts_item_info {
+	& select {
+		border: none;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;		
+		color: #444856;
+		margin: 0 0 7px -3px;
+	}
+}
 .contacts_items_2 {
 	margin: 100px 0 0 0;
 }

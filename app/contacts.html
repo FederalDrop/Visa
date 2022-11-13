@@ -49,11 +49,12 @@
 						<a href="#" class="__body_up_social" target="_blank"><img src="img/_src/svg/icon_wa.svg" alt="wa"></a>
 					</div>
 					<div class="__body_up_geo">
-						<div class="__up_geo_item">
-							<div class="__geo_item_pin"><img src="img/_src/svg/map_pin.svg" alt="pin"></div>
-							<p class="__geo_item_text">Астана</p>
-							<div class="__geo_item_arrow"><img src="img/_src/svg/geo_arrow_down.svg" alt="arrow"></div>
-						</div>
+						<div class="__geo_item_pin"><img src="img/_src/svg/map_pin.svg" alt="pin"></div>
+						<select name="geo">
+							<option value="Aстана">Aстана</option>
+							<option value="Актобе">Aктобе</option>
+							<option value="Тараз">Тараз</option>
+						</select>
 					</div>
 				</div>
 				<div class="header_body_down">
@@ -92,7 +93,11 @@
 						<div class="contacts_item flex">
 							<div class="contacts_item_img"><img src="img/_src/map_pin_big.png" alt="pin"></div>
 							<div class="contacts_item_info">
-								<p class="contacts_item_title">Астана</p>
+								<select name="city">
+									<option value="Астана">Астана</option>
+									<option value="Актобе">Aктобе</option>
+									<option value="Тараз">Тараз</option>
+								</select>
 								<p><a href="#" class="contacts_item_adress" target="_blank">Большой проспект П.С., 58, офис 521,
 										197136</a></p>
 							</div>
@@ -243,8 +248,8 @@
 		function initMap() {
 
 			var map = new google.maps.Map(document.getElementById('map'), {
-				center: { lat: 48.3601323, lng: 24.4067707 },
-				zoom: 16,
+				center: { lat: 51.1742261, lng: 71.4280616 },
+				zoom: 13,
 				panControl: false,
 				zoomControl: true,
 				mapTypeControl: false,
@@ -257,8 +262,28 @@
 
 			var marker = new google.maps.Marker({
 				map: map,
-				position: { lat: 48.3590899, lng: 24.4067919 },
-				title: 'RESORT MEDICAL PARK',
+				position: { lat: 51.1472756, lng: 71.4600324 },
+				title: 'Отделение №1',
+				icon: {
+					url: "img/_src/map.png",
+					//scaledSize: new google.maps.Size(127, 127)
+				}
+			});
+
+			var marker_2 = new google.maps.Marker({
+				map: map,
+				position: { lat: 51.1843109, lng: 71.3446082 },
+				title: 'Отделение №1',
+				icon: {
+					url: "img/_src/map.png",
+					//scaledSize: new google.maps.Size(127, 127)
+				}
+			});
+
+			var marker_3 = new google.maps.Marker({
+				map: map,
+				position: { lat: 51.1836591, lng: 71.4714676 },
+				title: 'Отделение №3',
 				icon: {
 					url: "img/_src/map.png",
 					//scaledSize: new google.maps.Size(127, 127)
@@ -266,11 +291,23 @@
 			});
 
 			var info = new google.maps.InfoWindow({
-				content: '<h1 class="map_title">RESORT MEDICAL PARK - лікувально-оздоровчий центр</h1><p class="map_p">участок Вишні 354/А с, Поляниця, Івано-Франківська область, Украина, 78593</p>'
+				content: '<h2 class="map_title">Отделение №1</h2><p class="map_p">Описание отделения</p>'
+			});
+			var info_2 = new google.maps.InfoWindow({
+				content: '<h2 class="map_title">Отделение №2</h2><p class="map_p">Описание отделения</p>'
+			});
+			var info_3 = new google.maps.InfoWindow({
+				content: '<h2 class="map_title">Отделение №3</h2><p class="map_p">Описание отделения</p>'
 			});
 
 			marker.addListener('click', function () {
 				info.open(map, marker);
+			});
+			marker_2.addListener('click', function () {
+				info_2.open(map, marker_2);
+			});
+			marker_3.addListener('click', function () {
+				info_3.open(map, marker_3);
 			});
 
 

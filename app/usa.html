@@ -49,11 +49,12 @@
 						<a href="#" class="__body_up_social" target="_blank"><img src="img/_src/svg/icon_wa.svg" alt="wa"></a>
 					</div>
 					<div class="__body_up_geo">
-						<div class="__up_geo_item">
-							<div class="__geo_item_pin"><img src="img/_src/svg/map_pin.svg" alt="pin"></div>
-							<p class="__geo_item_text">Астана</p>
-							<div class="__geo_item_arrow"><img src="img/_src/svg/geo_arrow_down.svg" alt="arrow"></div>
-						</div>
+						<div class="__geo_item_pin"><img src="img/_src/svg/map_pin.svg" alt="pin"></div>
+						<select name="geo">
+							<option value="Aстана">Aстана</option>
+							<option value="Актобе">Aктобе</option>
+							<option value="Тараз">Тараз</option>
+						</select>
 					</div>
 				</div>
 				<div class="header_body_down">
@@ -106,7 +107,8 @@
 								</div>
 							</div>
 						</div>
-						<button class="main_btn usa_btn">Получить консультацию</button>
+						<button class="main_btn usa_btn air-open-btn" data-popup-current="callback_form">Получить
+							консультацию</button>
 					</div>
 					<div class="usa_nav">
 						<a href="#usa_visa" class="usa_link">Оформление</a>
@@ -201,7 +203,8 @@
 							<p class="__sitebar_visa_title">Начните оформление визы сейчас</p>
 							<p class="__sitebar_visa_text">Продолжить можно будет в любое время с того шага, на котором вы
 								остановились</p>
-							<button class="main_btn __sitebar_visa_btn">Оформить визу</button>
+							<button class="main_btn __sitebar_visa_btn air-open-btn" data-popup-current="callback_form">Оформить
+								визу</button>
 						</div>
 						<div class="__sitebar_direction">
 							<p class="__sitebar_direction_title">Другие направления</p>
@@ -307,6 +310,31 @@
 					<p class="__web_text">Разработчик:</p>
 					<a href="#" class="__web_link">spacesdev.space</a>
 				</div>
+			</div>
+		</div>
+		<div class="popup_form_body popup-air" data-air="callback_form">
+			<div class="popup_form">
+				<form action="#">
+					<p class="popup_form_title">Заказать обратный звонок</p>
+					<div class="form_line"></div>
+					<p class="popup_form_text">Оставьте свои контакты, наш менеджер свяжется с вами в течении 15 минут и ответит
+						на ваши вопросы</p>
+					<div class="popup_form_item">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<div class="form_input_icon"><img src="img/_src/svg/form_icon_user.svg" alt="name"></div>
+					</div>
+					<div class="popup_form_item">
+						<input type="tel" name="phone" placeholder="Номер телефона">
+						<div class="form_input_icon"><img src="img/_src/svg/form_icon_phone.svg" alt="tel"></div>
+					</div>
+					<div class="popup_form_item">
+						<p>Нажимая кнопку, вы соглашаетесь с <a href="politics.html" target="_blank">политикой
+								конфиденциальности</a></p>
+					</div>
+					<div class="popup_form_item">
+						<input type="submit" name="btn" value="Отправить заявку"></input>
+					</div>
+				</form>
 			</div>
 		</div>
 
