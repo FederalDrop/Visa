@@ -177,7 +177,8 @@
 }
 .__sitebar_visa_btn {
 	font-size: 16px;
-	padding: 12px 50px;
+	padding: 12px 0;
+	width: 100%;
 }
 .__sitebar_direction {
 	margin: 50px 0 0 0;
@@ -235,4 +236,142 @@
 	background: #3D3D3D;
 	border-radius: 29px;
 	padding: 15px 75px;
+}
+@media only screen and (max-width: 1120px){
+	.__visa_content {
+		margin: 0 20px 0 0;
+	}
+}
+@media only screen and (max-width: 1070px){
+	.__sitebar_visa_text {
+		margin: 20px 0;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.usa_visa .container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.__visa_content {
+		width: 100%;
+		margin: 0 0 50px 0;
+	}
+	.__sitebar_direction_items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.__sitebar_direction_item {
+		margin: 0 0 20px 0;
+		width: 25%;
+	}
+	.__sitebar_direction_item:last-child {
+		margin: 0 0 20px 0;
+	}
+	.__visa_sitebar {
+		width: 100%;
+	}
+	.__direction_btn {
+		width: auto;
+		margin: 20px 0 0 0;
+	}
+	.__sitebar_visa {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 650px){
+	.__sitebar_direction_item {
+		width: 33%;
+	}
+	.__visa_main_title, .doc_title {
+		font-size: 26px;
+	}
+	.__visa_content>p, .doc_info_title {
+		font-size: 18px;
+	}
+	.__visa_title {
+		font-size: 22px;
+	}
+	.doc_head {
+		align-items: center;
+	}
+	.doc_info_text {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 570px){
+	.__visa_main_title, .doc_title {
+		font-size: 22px;
+	}
+	.__visa_content>p, .doc_info_title {
+		font-size: 16px;
+	}
+	.select {
+		padding: 10px 15px;
+	}
+	.usa_items_container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.usa_items {
+		margin: 0 0 20px 0;
+	}
+}
+@media only screen and (max-width: 500px){
+	.doc_head {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.doc_title {
+		margin: 0 0 20px 0;
+	}
+}
+@media only screen and (max-width: 450px){
+	.__sitebar_direction_item {
+		width: 50%;
+	}
+	.doc_body {
+		padding: 20px 25px;
+	}
+}
+@media only screen and (max-width: 420px){
+	.usa_link {
+		margin: 0 10px 0 0;
+	}
+	.__sitebar_visa {
+		width: 100%;
+	}
+	.__visa_main_title, .__visa_title {
+		margin: 0 0 20px 0;
+	}
+	.__visa_content>p {
+		margin: 0 0 15px 0;
+	}
+	.doc_item_number {
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+	}
+	.doc_item_info {
+		margin: 0 0 0 15px;
+	}
+	.__visa_content {
+		margin: 0 0 30px 0;
+	}
+	.__sitebar_direction {
+		margin: 30px 0 0 0;
+	}
+	.map_abs_text {
+		padding: 15px 0;
+		width: 90%;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 380px){
+	.usa_nav {
+		display: flex;
+		flex-direction: column;
+	}
+	.usa_link {
+		margin: 0 0 10px 0;
+	}
 }

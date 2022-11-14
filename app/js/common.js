@@ -164,15 +164,29 @@ $(function () {
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		dots: true,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 880,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 570,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					adaptiveHeight: false,
+				}
+			},
+		]
 	});
 	$('.vac_slider').slick({
 		speed: 1000,
@@ -180,15 +194,29 @@ $(function () {
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		dots: true,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 880,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 570,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					adaptiveHeight: false,
+				}
+			},
+		]
 	});
 	$('.university_slider').slick({
 		speed: 1000,
@@ -196,15 +224,29 @@ $(function () {
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		dots: true,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 880,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 570,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					adaptiveHeight: false,
+				}
+			},
+		]
 	});
 	$('.programs_slider').slick({
 		speed: 1000,
@@ -212,15 +254,22 @@ $(function () {
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		dots: true,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1200,
-		// 		settings: {
-		// 			autoplay: true,
-		// 			autoplaySpeed: 3000,
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 1030,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 720,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					adaptiveHeight: false,
+				}
+			},
+		]
 	});
 	$(document).scroll(function (e) {
 		$(window).scrollTop() > 50 ? $('.header_body_up').addClass('__body_up') : $('.header_body_up').removeClass('__body_up');

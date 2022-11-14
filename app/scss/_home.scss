@@ -979,11 +979,14 @@
 	.visa {
 		padding: 70px 0 50px 0;
 	}
-	.props, .team, .vac, .video, .work {
+	.props, .team, .vac, .video, .work, .programs, .reviews_black, .stage_black {
 		padding: 70px 0;
 	}
 	.history, .migration_programs, .news, .pair, .post_slider_section, .reviews, .smi, .stage, .university, .usa_visa, .work_form {
 		padding: 70px 0;
+	}
+	.about, .contacts, .main_news, .main_reviews, .tourism {
+		padding: 0 0 70px 0;
 	}
 	.team_slider_info {
 		max-height: 240px;
@@ -1118,10 +1121,13 @@
 	.news_item.none_mobile {
 		display: none;
 	}
+	.about, .contacts, .main_news, .main_reviews, .tourism {
+		padding: 0 0 50px 0;
+	}
 	.visa {
 		padding: 50px 0 30px 0;
 	}
-	.props, .team, .vac, .video, .work {
+	.props, .team, .vac, .video, .work, .programs, .reviews_black, .stage_black {
 		padding: 50px 0;
 	}
 	.history, .migration_programs, .news, .pair, .post_slider_section, .reviews, .smi, .stage, .university, .usa_visa, .work_form {
