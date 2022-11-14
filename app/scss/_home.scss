@@ -350,6 +350,8 @@
 		border-radius: 36.8996px;
 		box-shadow: $mainShadow;
 		transition: all 0.3s ease;
+		border: 1px solid #3D3D3D;
+		object-fit: cover;
 	}
 }
 .reviews_slider {
@@ -392,6 +394,7 @@
 		height: 100%;
 		border-radius: 39px;
 		box-shadow: $mainShadow;
+		object-fit: cover;
 	}
 }
 .reviews_info_name {
@@ -413,9 +416,10 @@
 	justify-content: flex-end;
 }
 .reviews_slider_text {
-	margin: 15px 0 10px 0;
+	margin: 15px 0;
 	height: 55px;
 	overflow: hidden;
+	line-height: 20px;
 }
 .riviews_btn {
 	box-shadow: $mainShadow;
@@ -626,21 +630,12 @@
 	width: 100%;
 	margin: 50px 0 0 0;
 }
-.team_slider_item:hover .team_slider_info {
-	max-height: 240px;
-	transition: all 0.8s ease;
-	background: linear-gradient(180deg, #3D3D3D 0%, #3D3D3D 100%);
-	border-radius: 0px 0px 15px 15px;
-}
-.team_slider_item:hover .team_slider_text {
-	opacity: 1;
-}
 .team_slider_item {
 	padding: 10px 15px 5px 10px;
 }
 .team_slider_info {
 	position: absolute;
-	transition: all 0.3s ease;
+	transition: all 0.8s ease;
 	width: calc(100% - 25px);
 	max-height: 100px;
 	overflow: hidden;
@@ -668,6 +663,7 @@
 	line-height: 29px;
 	color: #FFFFFF;
 	text-align: center;
+	transition: all 0.3s;
 }
 .team_slider_subtitle {
 	color: #FFFFFF;
@@ -724,9 +720,9 @@
 }
 .smi_info_text {
 	font-size: 14px;
-	line-height: 17px;
+	line-height: 18px;
 	color: rgba(51, 54, 65, 0.69);
-	height: 85px;
+	height: 87px;
 	overflow: hidden;
 	margin: 0 0 40px 0;
 }
@@ -937,12 +933,15 @@
 	}
 }
 @media only screen and (max-width: 900px){
+	.news_item.none {
+		display: none;
+	}
 	.work_items {
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 	}
 	.work_video {
-		width: 560px;
+		width: 100%;
 	}
 	.work_video {
 		margin: 0 0 30px 0;
@@ -951,6 +950,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 	}
 	.news_item {
 		width: calc(50% - 30px);
@@ -967,6 +967,32 @@
     width: calc(33% - 20px);
 	}
 }
+@media only screen and (max-width: 800px){
+	.visa_item {
+		width: calc(43% - 20px);
+	}
+}
+@media only screen and (max-width: 768px){
+	.main_line {
+		margin: 25px 0 40px 0;
+	}
+	.visa {
+		padding: 70px 0 50px 0;
+	}
+	.props, .team, .vac, .video, .work {
+		padding: 70px 0;
+	}
+	.history, .migration_programs, .news, .pair, .post_slider_section, .reviews, .smi, .stage, .university, .usa_visa, .work_form {
+		padding: 70px 0;
+	}
+	.team_slider_info {
+		max-height: 240px;
+		background: linear-gradient(180deg, #3D3D3D 0%, #3D3D3D 100%);
+	}
+	.team_slider_text {
+		opacity: 1;
+	}
+}
 @media only screen and (max-width: 750px){
 	.props_info_item.width {
 		width: 42%;
@@ -977,7 +1003,7 @@
 }
 @media only screen and (max-width: 720px){
 	.visa_item {
-    width: calc(43% - 20px);
+		width: calc(50% - 20px);
 	}
 	.props_info_items {
 		flex-wrap: wrap;
@@ -1047,8 +1073,11 @@
 }
 @media only screen and (max-width: 570px){
 	.team_slider_img {
-    height: 390px;
-    max-height: 390px;
+    height: 490px;
+    max-height: 490px;
+	}
+	.team_slider_info {
+		max-height: 200px;
 	}
 	.news_item {
     width: calc(70% - 30px);
@@ -1081,21 +1110,42 @@
 	.visa_item {
     width: calc(70% - 20px);
 	}
-	.pair_item {
-    width: calc(70% - 20px);
-	}
 	.head {
 		height: 700px;
 	}
 }
 @media only screen and (max-width: 450px){
+	.news_item.none_mobile {
+		display: none;
+	}
+	.visa {
+		padding: 50px 0 30px 0;
+	}
+	.props, .team, .vac, .video, .work {
+		padding: 50px 0;
+	}
+	.history, .migration_programs, .news, .pair, .post_slider_section, .reviews, .smi, .stage, .university, .usa_visa, .work_form {
+		padding: 50px 0;
+	}
+	.main_title {
+		font-size: 28px;
+	}
 	.news_item {
     width: calc(85% - 30px);
 	}
+	.container {
+    padding: 0 10px;
+	}	
 }
 @media only screen and (max-width: 420px){
-	.head_info_title {
-		font-size: 24px;
+	.props_download {
+		width: 100%;
+	}
+	.news_info_title, .team_info_title {
+		font-size: 20px;
+	}
+	.head_play_container {
+    bottom: 127px;
 	}
 	.__info_item_line {
 		width: 10px;
@@ -1118,10 +1168,7 @@
 		margin: 35px 0;
 	}
 	.news_item {
-    width: calc(95% - 30px);
-	}
-	.pair_item {
-    width: calc(85% - 20px);
+    width: calc(100% - 30px);
 	}
 	.props_info_item {
 		width: 100%;
@@ -1130,12 +1177,14 @@
 	.props_info_title {
 		margin: 0 0 10px 0;
 	}
+	.team_slider_info {
+		max-height: 250px;
+	}
 }
 @media only screen and (max-width: 370px){
-	.head_info_title {
-    font-size: 20px;
-		line-height: 29px;
-  }
+	.crumb_link {
+		font-size: 13px;
+	}
 	.__info_item_text {
 		font-size: 16px;
 	}
@@ -1145,14 +1194,8 @@
 	.visa_item {
     width: calc(100% - 20px);
 	}
-	.pair_item {
-    width: calc(100% - 20px);
-	}
 	.work_video {
     height: 250px;
-	}
-	.news_item {
-    width: calc(100% - 30px);
 	}
 }
 @media only screen and (max-width: 330px){

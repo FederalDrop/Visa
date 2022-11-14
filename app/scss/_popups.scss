@@ -176,11 +176,16 @@
 }
 .video_popup {
     width: 90%;
-    height: 90%;
+    height: 75%;
     max-height: 700px;
     & iframe {
         width: 100%;
         height: 100%;
         border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .video_popup {
+        height: 60%;
     }
 }

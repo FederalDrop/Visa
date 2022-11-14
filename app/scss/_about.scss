@@ -101,6 +101,35 @@
 	.history_slider {
 		width: 100%;
 	}
+	.history_slider .slick-arrow.slick-next {
+		left: auto;
+		right: 0;
+	}
+	.history_slider .slick-arrow.slick-prev {
+		left: auto;
+		right: 100px;
+	}
+	.history_slider .slick-arrow {
+		top: 98%;
+	}
+}
+@media only screen and (max-width: 768px){
+	.travel_title, .inside_title {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 420px){
+	.history_item_title {
+		font-size: 20px;
+		margin: 20px 0 10px 0;
+	}
+	.history_item_text {
+		font-size: 16px;
+	}
+	.history_item_number {
+		font-size: 28px;
+		padding: 8px 16px;
+	}
 }
 @media only screen and (max-width: 380px){
 	.history_item_title {

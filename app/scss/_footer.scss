@@ -52,6 +52,7 @@
 }
 .footer_contact_text {
 	color: #FFFFFF;
+	transition: all 0.3s ease;
 }
 @media only screen and (max-width: 950px){
 	.footer_items {
@@ -79,6 +80,14 @@
 		&:last-child {
 			margin: 20px 0 0 0;
 		}
+	}
+	.footer_nav {
+		display: none;
+	}
+	.footer_logo {
+		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 580px){

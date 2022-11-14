@@ -222,12 +222,12 @@ ul {
 		color: #FFFFFF;
 		transition: all 0.3s ease;
 	}
-	.footer_contact_link:hover {
-		color: rgba(255, 255, 255, 0.54);
+	.footer_contact_link:hover, .footer_contact_text:hover {
+		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
-	.contacts_item_link:hover {
-		color: #787878;
+	.contacts_item_link:hover, .contacts_item_adress:hover {
+		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
 	.riviews_btn:hover {
@@ -265,8 +265,12 @@ ul {
 		margin: 0 25px 0 0;
 		transition: all 0.3s ease;
 	}
-	.news_info_title a:hover, .smi_info_title a:hover, .tourism_list_item:hover {
+	.tourism_list_item:hover {
 		color: rgb(61, 61, 61, 0.8);
+		transition: all 0.3s ease;
+	}
+	.news_info_title a:hover, .smi_info_title a:hover {
+		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
 	.video_play_btn img:hover {
@@ -280,5 +284,25 @@ ul {
 		& p {
 			color: #FFFFFF;
 		}
+		.tourism_list_item:hover .__list_item_text {
+			color: #FFEA00!important;
+		}
+	}
+	.__sitebar_direction_item:hover .__direction_item_text, .work_form_item a:hover  {
+		color: #FFEA00;
+		transition: all 0.3s ease;
+	}
+	.team_slider_item:hover .team_slider_info {
+		max-height: 240px;
+		transition: all 0.8s ease;
+		background: linear-gradient(180deg, #3D3D3D 0%, #3D3D3D 100%);
+		border-radius: 0px 0px 15px 15px;
+	}
+	.team_slider_item:hover .team_slider_text {
+		opacity: 1;
+	}
+	.team_info_title:hover {
+		color: #FFEA00;
+		transition: all 0.3s;
 	}
 }

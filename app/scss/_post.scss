@@ -90,9 +90,24 @@
 	.post_clock {
 		margin: 20px 0;
 	}
+	.post_title {
+		width: 80%;
+		font-size: 28px;
+	}
+	.post_info h1, .post_info h2, .post_info h3, .post_info h4, .post_info h5, .post_info h6 {
+		font-size: 20px;
+	}
+	.post_info p {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 390px){
+	.crumbs {
+    padding: 40px 0 0 0;
+	}
 }
 @media only screen and (max-width: 380px){
 	.post_title {
-		font-size: 26px;
+		font-size: 24px;
 	}
 }

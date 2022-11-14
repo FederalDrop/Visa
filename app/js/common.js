@@ -140,7 +140,14 @@ $(function () {
 		adaptiveHeight: true,
 		slidesToScroll: 1,
 		slidesToShow: 2,
+		dots: false,
 		responsive: [
+			{
+				breakpoint: 950,
+				settings: {
+					dots: true,
+				}
+			},
 			{
 				breakpoint: 680,
 				settings: {
