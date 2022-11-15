@@ -337,20 +337,24 @@
 	display: flex;
 }
 .work_social_item {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 45px;
 	height: 45px;
 	margin: 0 25px 0 0;
+	box-shadow: $mainShadow;
+	border: 1px solid #3D3D3D;
+	transition: all 0.3s ease;
+	border-radius: 100px;
+	background: #3D3D3D;
 	&:last-child {
 		margin: 0;
 	}
 	& img {
-		width: 100%;
-		height: 100%;
-		border-radius: 36.8996px;
-		box-shadow: $mainShadow;
-		transition: all 0.3s ease;
-		border: 1px solid #3D3D3D;
+		width: 27px;
+		height: auto;
+		
 		object-fit: cover;
 	}
 }

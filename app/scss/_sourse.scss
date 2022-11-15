@@ -186,6 +186,7 @@ ul {
 	font-size: 36px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	font-family: 'Montserrat',sans-serif;
 }
 .main_line {
 	width: 111px;
@@ -201,11 +202,16 @@ ul {
 		color: #FFFFFF;
 		transition: all 0.3s ease;
 	}
-	.__bodu_up_link:hover, .usa_link:hover {
+	.usa_link:hover {
 		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
-	.__body_up_social img:hover {
+	.__bodu_up_link:hover {
+		background: #3d3d3d;
+		color: #FFEA00;
+		transition: all 0.3s ease;
+	}
+	.__body_up_social:hover {
 		border: 1px solid #FFEA00;
 		transition: all 0.3s ease;
 	}
@@ -214,7 +220,7 @@ ul {
 		border: 1px solid #3D3D3D;
 		transition: all 0.3s ease;
 	}
-	.work_social_item img:hover, .__social_item img:hover {
+	.work_social_item:hover, .__social_item:hover a {
 		border: 1px solid #FFEA00;
 		transition: all 0.3s ease;
 	}
@@ -309,12 +315,7 @@ ul {
 		transform: scale(1.1);
 		transition: all 0.3s ease;
 	}
-	.__mobile_phone_link:hover, .mobile_link:hover {
-		border: 1px solid #FFEA00;
-		box-shadow: $mainShadow;
-		transition: border 0.3s ease;
-	}
-	.__mobile_social_item:hover img {
+	.__mobile_social_item:hover {
 		border: 1px solid #FFEA00;
 		transition: all 0.3s ease;
 	}
