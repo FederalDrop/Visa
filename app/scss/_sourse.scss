@@ -295,7 +295,7 @@ ul {
 	.team_slider_item:hover .team_slider_info {
 		max-height: 240px;
 		transition: all 0.8s ease;
-		background: linear-gradient(180deg, #3D3D3D 0%, #3D3D3D 100%);
+		background: linear-gradient(180deg, rgba(41, 47, 69, 0.5) 0%, rgba(41, 47, 69, 1) 100%);
 		border-radius: 0px 0px 15px 15px;
 	}
 	.team_slider_item:hover .team_slider_text {
@@ -304,5 +304,22 @@ ul {
 	.team_info_title:hover {
 		color: #FFEA00;
 		transition: all 0.3s;
+	}
+	.video_item:hover .video_item_img img {
+		transform: scale(1.1);
+		transition: all 0.3s ease;
+	}
+	.__mobile_phone_link:hover, .mobile_link:hover {
+		border: 1px solid #FFEA00;
+		box-shadow: $mainShadow;
+		transition: border 0.3s ease;
+	}
+	.__mobile_social_item:hover img {
+		border: 1px solid #FFEA00;
+		transition: all 0.3s ease;
+	}
+	.__mobile_link_direction:hover, .__mobile_link_nav:hover {
+		border-bottom: 1px solid #FFFFFF;
+		transition: all 0.3s ease;
 	}
 }

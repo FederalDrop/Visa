@@ -177,6 +177,7 @@
 .video_popup {
     width: 90%;
     height: 75%;
+    max-width: 1140px;
     max-height: 700px;
     & iframe {
         width: 100%;
@@ -184,8 +185,95 @@
         border-radius: 15px;
     }
 }
+@media only screen and (max-height: 805px){
+    .programs_popup_item {
+        height: 88%;
+        .air-close {
+            top: -35px;
+        }
+    }
+    .programs_popup {
+        height: 100%;
+        overflow: auto;
+    }
+}
+@media only screen and (max-height: 725px){
+    .popup_air_q {
+        height: 88%;
+        .air-close {
+            top: -35px;
+        }
+    }
+    .popup_form_q {
+        height: 99%;
+        overflow: auto;
+    }
+}
+@media only screen and (max-height: 715px){
+    .reviews_form_wrapper {
+        height: 88%;
+        .air-close {
+            top: -35px;
+        }
+    }
+    .reviews_form {
+        height: 99%;
+        overflow: auto;
+    }
+}
 @media only screen and (max-width: 950px){
     .video_popup {
         height: 60%;
+    }
+}
+@media only screen and (max-width: 620px){
+    .programs_popup {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 465px){
+    .reviews_popup {
+        width: 95%;
+        margin: 0 auto;
+        .reviews_svg_abs {
+            right: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 450px){
+    .__popup_abs_title {
+        font-size: 18px;
+    }
+    .programs_popup_title {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .popup_form {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .popup_form_title {
+        font-size: 20px;
+    }
+    .air-close {
+        right: 10px;
+    }
+    .reviews_popup_text {
+        font-size: 16px;
+    }
+    .riviews_popup_title {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .reviews_popup .reviews_svg_abs {
+        right: 9px;
+    }
+}
+@media only screen and (max-width: 340px){
+    .reviews_popup .reviews_svg_abs {
+        right: 8px;
     }
 }
