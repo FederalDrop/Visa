@@ -397,21 +397,22 @@
   display: none; 
   position: absolute;
   top: 100%;
-  right: 0;
-  left: 0;
+  left: -35px;
   z-index: 999;
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: darken(#FFFFFF, 5);
+  background-color: #ffffff;
+	border-radius: 0 0 15px 15px;
+	border: 1px solid #3D3D3D;
+	width: 140px;
   li {
     margin: 0;
     padding: 12px 0;
     text-indent: 15px;
-    border-top: 1px solid #3D3D3D;
     transition: all 0.15s ease-in;
 		&:last-child {
-			border-bottom: 1px solid #3D3D3D;
+			border-radius: 0 0 15px 15px;
 		}
     &:hover, 
     &.is-selected {
@@ -421,6 +422,14 @@
       display: none;
     }
   }
+}
+.contacts_item_info .select-options {
+	width: 170px!important;
+	left: 0!important;
+}
+.header_mobile_geo .select-options {
+	width: 150px;
+	right: 0;
 }
 @media only screen and (max-height: 800px){
 	.__mobile_title {

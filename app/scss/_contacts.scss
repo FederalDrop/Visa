@@ -89,6 +89,22 @@
 .map {
 	height: 695px;
 }
+.map_content_wrapper {
+	max-width: 190px;
+	p {
+		margin: 0 0 5px 0;
+		:last-child {
+			margin: 0;
+		}
+	}
+}
+.map_tel {
+	font-weight: 500;
+}
+.map_title {
+	font-size: 18px;
+	margin: 0 0 5px 0;
+}
 .contacts_item_info .select {
 	padding: 10px 60px!important;
 }
