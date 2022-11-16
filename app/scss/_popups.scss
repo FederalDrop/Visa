@@ -186,6 +186,9 @@
         border-radius: 15px;
     }
 }
+.tourism_popup_container {
+    max-width: 1140px;
+}
 @media only screen and (max-width: 1160px){
     .video_popup {
         width: calc(100% - 40px);
@@ -211,6 +214,19 @@
     .programs_popup {
         height: 100%;
         overflow: auto;
+    }
+}
+@media only screen and (max-height: 750px){
+    .tourism_popup_container {
+        height: 100%;
+        padding: 50px 0 20px 0;
+        .tourism_popup {
+            height: 100%;
+            overflow: auto;
+        }
+        .air-close {
+            top: 15px;
+        }
     }
 }
 @media only screen and (max-height: 725px){
@@ -259,6 +275,9 @@
     .programs_popup_title {
         font-size: 18px;
     }
+    .tourism_popup .tourism_items_container {
+        padding: 20px 15px 0 15px;
+    }
 }
 @media only screen and (max-width: 400px){
     .popup_form {
@@ -281,6 +300,9 @@
 @media only screen and (max-width: 380px){
     .reviews_popup .reviews_svg_abs {
         right: 9px;
+    }
+    .tourism_popup .tourism_popup_title {
+        font-size: 24px;
     }
 }
 @media only screen and (max-width: 340px){

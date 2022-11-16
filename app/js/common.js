@@ -72,6 +72,7 @@ $(function () {
 				settings: {
 					slidesToShow: 1,
 					arrows: false,
+					adaptiveHeight: false,
 				}
 			},
 		]
@@ -273,7 +274,7 @@ $(function () {
 	$(document).scroll(function (e) {
 		$(window).scrollTop() > 50 ? $('.header_body_up').addClass('__body_up') : $('.header_body_up').removeClass('__body_up');
 	});
-	$('select').each(function () {
+	$('.custom-select').each(function () {
 		var $this = $(this), numberOfOptions = $(this).children('option').length;
 
 		$this.addClass('select-hidden');

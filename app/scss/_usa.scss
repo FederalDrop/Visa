@@ -312,6 +312,11 @@
 		width: 400px;
 	}
 }
+@media only screen and (max-width: 768px){
+	.__sitebar_direction {
+		display: none;
+	}
+}
 @media only screen and (max-width: 680px){
 	.doc_title {
 		font-size: 26px;

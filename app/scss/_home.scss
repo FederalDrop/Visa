@@ -909,6 +909,13 @@
 	.work_video {
 		width: 500px;
 	}
+	.team_slider_info {
+		max-height: 240px;
+		background: linear-gradient(180deg, #3D3D3D 0%, #3D3D3D 100%);
+	}
+	.team_slider_text {
+		opacity: 1;
+	}
 }
 @media only screen and (max-width: 950px){
 	.pair_items {
@@ -991,13 +998,6 @@
 	}
 	.about, .contacts, .main_news, .main_reviews, .tourism {
 		padding: 0 0 70px 0;
-	}
-	.team_slider_info {
-		max-height: 240px;
-		background: linear-gradient(180deg, #3D3D3D 0%, #3D3D3D 100%);
-	}
-	.team_slider_text {
-		opacity: 1;
 	}
 }
 @media only screen and (max-width: 750px){
@@ -1114,8 +1114,18 @@
 	}
 }
 @media only screen and (max-width: 500px){
+	.visa_items {
+		width: 100%;
+		justify-content: center;
+		margin: 0;
+	}
+	.about_items {
+		width: 100%!important;
+		margin: 0!important;
+	}
 	.visa_item {
-    width: calc(70% - 20px);
+    width: 70%;
+		margin: 0 0 20px 0;
 	}
 	.head {
 		height: 700px;
@@ -1162,7 +1172,7 @@
 		margin: 0 10px 0 0;
 	}
 	.visa_item {
-    width: calc(85% - 20px);
+    width: 85%;
 	}
 	.work_info_text {
 		font-size: 16px;
@@ -1202,7 +1212,7 @@
 		padding: 11px 17px;
 	}
 	.visa_item {
-    width: calc(100% - 20px);
+    width: 100%;
 	}
 	.work_video {
     height: 250px;

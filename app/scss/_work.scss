@@ -195,7 +195,7 @@
 		border: 1px solid #FFEA00;
 		border-radius: 31.5px;
 		color: #3D3D3D;
-		width: 187px;
+		width: 200px;
 		font-weight: 600;
 		cursor: pointer;
 		&:hover {
@@ -280,9 +280,16 @@
 	}
 }
 @media only screen and (max-width: 790px){
+	.order_1 {
+		order: 0!important;
+	}
+	.order_2 {
+		order: 1!important;
+	}
 	.work_form_item {
     width: calc(50% - 30px);
     margin: 0 15px 20px 15px;
+		order: 4;
 	}
 	.btn_submit {
 		width: 100%;
