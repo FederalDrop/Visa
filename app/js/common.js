@@ -271,6 +271,23 @@ $(function () {
 			},
 		]
 	});
+	if (window.matchMedia('(max-width: 600px)').matches) {
+		$('.stage_items').slick({
+			dots: true,
+			arrows: false,
+			adaptiveHeight: true,
+		});
+	}
+	if (window.matchMedia('(max-width: 500px)').matches) {
+		$('.visa_items').slick({
+			dots: true,
+			arrows: false,
+		});
+		$('.about_items').slick({
+			dots: true,
+			arrows: false,
+		});
+	}
 	$(document).scroll(function (e) {
 		$(window).scrollTop() > 50 ? $('.header_body_up').addClass('__body_up') : $('.header_body_up').removeClass('__body_up');
 	});

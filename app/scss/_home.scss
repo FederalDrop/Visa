@@ -1089,8 +1089,8 @@
 	.news_item {
     width: calc(70% - 30px);
 	}
-	.reviews_slider .slick-dots {
-		margin: 0;
+	.slick-dots {
+		margin: 20px 0 0 0;
 	}
 	.slick-dots li {
 		margin: 0 5px;
@@ -1118,6 +1118,11 @@
 		width: 100%;
 		justify-content: center;
 		margin: 0;
+		width: calc(100% + 30px);
+		margin: 0 0 0 -15px;
+		.slick-dots {
+			margin: 20px 0 0 0;
+		}
 	}
 	.about_items {
 		width: 100%!important;
@@ -1125,7 +1130,7 @@
 	}
 	.visa_item {
     width: 100%;
-		margin: 0 0 20px 0;
+		margin: 0 15px;
 	}
 	.head {
 		height: 700px;
@@ -1212,7 +1217,19 @@
     height: 250px;
 	}
 }
+@media only screen and (max-width: 345px){
+	.__info_item_text {
+		font-size: 15px;
+	}
+	.__info_item_line {
+		width: 8px;
+		margin: 0 5px 0 0;
+	}
+}
 @media only screen and (max-width: 330px){
+	.head_info_title {
+		font-size: 27px;
+	}
 	.work_social_title {
 		font-size: 15px;
 	}
