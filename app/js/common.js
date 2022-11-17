@@ -425,7 +425,6 @@ window.addEventListener('load', function () {
 	}
 	popupAir()
 
-
 	function videoLoad() {
 		let videoBtn = document.querySelectorAll('.video-btn');
 		for (let i = 0; i < videoBtn.length; i++) {

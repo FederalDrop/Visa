@@ -1106,7 +1106,7 @@
 		line-height: 35px;
 	}
 	.head_play_container {
-		bottom: 141px;
+		bottom: 225px;
 	}
 	
 	.news_item {
@@ -1114,6 +1114,9 @@
 	}
 }
 @media only screen and (max-width: 500px){
+	.head_play_container {
+		bottom: 140px;
+	}
 	.visa_items {
 		width: 100%;
 		justify-content: center;
