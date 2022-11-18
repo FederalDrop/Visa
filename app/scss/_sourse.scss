@@ -142,10 +142,12 @@ ul {
 	overflow: hidden;
 	min-width: 320px;
 }
+
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
 .main_btn {
 	background: #FFEA00;
 	border: 2px solid #FFEA00;
@@ -158,36 +160,64 @@ ul {
 	cursor: pointer;
 	padding: 15px 41px;
 	font-size: 20px;
+
 	&:hover {
 		background: #fff;
 		transition: all ease 0.3s;
 	}
 }
+
 .visa {
 	padding: 100px 0 60px 0;
 }
-.news, .pair, .reviews, .smi, .post_slider_section, .history, .usa_visa, .stage, .university, .migration_programs, .work_form {
+
+.news,
+.pair,
+.reviews,
+.smi,
+.post_slider_section,
+.history,
+.usa_visa,
+.stage,
+.university,
+.migration_programs,
+.work_form {
 	padding: 100px 0;
 }
-.work, .team, .props, .video, .vac {
+
+.work,
+.team,
+.props,
+.video,
+.vac {
 	padding: 100px 0;
 	background: #242424;
 	color: #FFFFFF;
 }
-.stage_black, .programs, .reviews_black {
+
+.stage_black,
+.programs,
+.reviews_black {
 	padding: 100px 0;
 	background: #242424;
 }
-.main_news, .about, .contacts, .main_reviews, .tourism {
+
+.main_news,
+.about,
+.contacts,
+.main_reviews,
+.tourism {
 	padding: 0 0 100px 0;
 }
+
 .main_title {
 	font-weight: 600;
 	font-size: 36px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
+
 .main_line {
 	width: 111px;
 	height: 2px;
@@ -197,129 +227,170 @@ ul {
 
 @media only screen and (min-width: 768px) {
 	.__body_up_btn:hover {
-		background: #3D3D3D;
+		background: #fff;
 		border: 1px solid #3D3D3D;
-		color: #FFFFFF;
+		color: #3D3D3D;
 		transition: all 0.3s ease;
 	}
+
 	.usa_link:hover {
 		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
+
 	.__bodu_up_link:hover {
 		background: #3d3d3d;
 		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
+
 	.__body_up_social:hover {
 		border: 1px solid #FFEA00;
 		transition: all 0.3s ease;
 	}
+
 	.__body_down_link:hover {
 		background: #FFEA00;
 		border: 1px solid #3D3D3D;
 		transition: all 0.3s ease;
 	}
-	.work_social_item:hover, .__social_item:hover a {
+
+	.work_social_item:hover,
+	.__social_item:hover a {
 		border: 1px solid #FFEA00;
 		transition: all 0.3s ease;
 	}
+
 	.footer_nav_link:hover {
 		color: #FFFFFF;
 		transition: all 0.3s ease;
 	}
-	.footer_contact_link:hover, .footer_contact_text:hover {
+
+	.footer_contact_link:hover,
+	.footer_contact_text:hover {
 		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
-	.contacts_item_link:hover, .contacts_item_adress:hover {
+
+	.contacts_item_link:hover,
+	.contacts_item_adress:hover {
 		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
+
 	.riviews_btn:hover {
 		background: #FFFFFF;
 		transition: all 0.3s ease;
 		color: #3D3D3D;
 	}
+
 	.riviews_btn.blue:hover {
 		background: #FFFFFF;
 	}
+
 	.riviews_btn.yellow:hover {
 		background: #FFFFFF;
 	}
+
 	.presentation_link:hover {
 		border-bottom: 1px solid #3D3D3D;
 	}
+
 	.__body_down_phone:hover {
 		border: 1px solid #000;
 		transition: all 0.3s ease;
 	}
+
 	.smi_info_btn:hover {
 		background: #FFFFFF;
 		color: #3D3D3D;
 		transition: all 0.3s ease;
 	}
+
 	.head_slider .slick-arrow.slick-next:hover {
 		transform: scale(1.1);
 	}
-	.news_item_img img:hover, .smi_item_img img:hover, .tourism_item_big:hover .tourism_item_img img, .direction_slider_item:hover .direction_slider_img>img, .university_slider_item:hover .university_slider_img img, .vac_slider_item:hover .vac_slider_img img {
+
+	.news_item_img img:hover,
+	.smi_item_img img:hover,
+	.tourism_item_big:hover .tourism_item_img img,
+	.direction_slider_item:hover .direction_slider_img>img,
+	.university_slider_item:hover .university_slider_img img,
+	.vac_slider_item:hover .vac_slider_img img {
 		transform: scale(1.1);
 		transition: all 0.3s ease;
 	}
+
 	.__info_btn_text:hover {
 		color: #3D3D3D;
 		margin: 0 25px 0 0;
 		transition: all 0.3s ease;
 	}
+
 	.tourism_list_item:hover {
 		color: rgb(61, 61, 61, 0.8);
 		transition: all 0.3s ease;
 	}
-	.news_info_title a:hover, .smi_info_title a:hover {
+
+	.news_info_title a:hover,
+	.smi_info_title a:hover {
 		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
+
 	.video_play_btn img:hover {
 		transform: scale(1.05);
 		transition: all 0.3s ease;
 	}
+
 	.tourism_item:hover {
 		background: #3D3D3D;
 		color: #FFFFFF;
 		transition: all 0.3s ease;
+
 		& p {
 			color: #FFFFFF;
 		}
+
 		.tourism_list_item:hover .__list_item_text {
-			color: #FFEA00!important;
+			color: #FFEA00 !important;
 		}
 	}
-	.__sitebar_direction_item:hover .__direction_item_text, .work_form_item a:hover  {
+
+	.__sitebar_direction_item:hover .__direction_item_text,
+	.work_form_item a:hover {
 		color: #FFEA00;
 		transition: all 0.3s ease;
 	}
+
 	.team_slider_item:hover .team_slider_info {
 		max-height: 240px;
 		transition: all 0.8s ease;
 		background: linear-gradient(180deg, rgba(41, 47, 69, 0.5) 0%, rgba(41, 47, 69, 1) 100%);
 		border-radius: 0px 0px 15px 15px;
 	}
+
 	.team_slider_item:hover .team_slider_text {
 		opacity: 1;
 	}
+
 	.team_info_title:hover {
 		color: #FFEA00;
 		transition: all 0.3s;
 	}
+
 	.video_item:hover .video_item_img img {
 		transform: scale(1.1);
 		transition: all 0.3s ease;
 	}
+
 	.__mobile_social_item:hover {
 		border: 1px solid #FFEA00;
 		transition: all 0.3s ease;
 	}
-	.__mobile_link_direction:hover, .__mobile_link_nav:hover {
+
+	.__mobile_link_direction:hover,
+	.__mobile_link_nav:hover {
 		border-bottom: 1px solid #FFFFFF;
 		transition: all 0.3s ease;
 	}
