@@ -291,6 +291,7 @@ $(function () {
 	$(document).scroll(function (e) {
 		$(window).scrollTop() > 50 ? $('.header_body_up').addClass('__body_up') : $('.header_body_up').removeClass('__body_up');
 	});
+
 	$('.custom-select').each(function () {
 		var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -441,6 +442,124 @@ window.addEventListener('load', function () {
 		}
 	}
 	videoLoad()
+
+	// data load rew
+	function rewDataLoad() {
+		let allRewItems = document.querySelectorAll('.reviews_slider_item');
+		if (allRewItems.length > 0) {
+			for (let i = 0; i < allRewItems.length; i++) {
+				allRewItems[i].querySelector('.riviews_btn').addEventListener('click', function () {
+					let rwImage = this.closest('.reviews_slider_item').querySelector('.reviews_slider_img img').src;
+					let rwName = this.closest('.reviews_slider_item').querySelector('.reviews_info_name').innerHTML;
+					let rwCity = this.closest('.reviews_slider_item').querySelector('.reviews_info_city').innerHTML;
+					let rwYear = this.closest('.reviews_slider_item').querySelector('.reviews_info_age').innerHTML;
+					let rwTitle = this.closest('.reviews_slider_item').querySelector('.reviews_title_abs').innerHTML;
+					let rwText = this.closest('.reviews_slider_item').querySelector('.reviews_slider_text').innerHTML;
+					let rwResone = this.closest('.reviews_slider_item').querySelector('.reviews_info_trip').innerHTML;
+
+					document.querySelector('.reviews_popup .reviews_slider_img img').src = rwImage;
+					document.querySelector('.reviews_popup .reviews_popup_name').innerHTML = rwName;
+					document.querySelector('.reviews_popup .reviews_popup_city').innerHTML = rwCity;
+					document.querySelector('.reviews_popup .reviews_popup_age').innerHTML = rwYear;
+					document.querySelector('.reviews_popup .riviews_popup_title').innerHTML = rwTitle;
+					document.querySelector('.reviews_popup .reviews_popup_text').innerHTML = rwText;
+					document.querySelector('.reviews_popup .reviews_popup_trip').innerHTML = rwResone;
+				})
+			}
+		}
+		else {
+			return;
+		}
+	}
+	rewDataLoad();
+
+
+	// data load program
+	function prDataLoad() {
+		let allPrItams = document.querySelectorAll('.programs_slider_item');
+		if (allPrItams.length > 0) {
+			for (let i = 0; i < allPrItams.length; i++) {
+				allPrItams[i].querySelector('.programs_btn').addEventListener('click', function () {
+					let prImage = this.closest('.programs_slider_item').querySelector('.imgrog').src;
+					let prImageLocation = this.closest('.programs_slider_item').querySelector('.__abs_coutry_flag img').src;
+					let prCountry = this.closest('.programs_slider_item').querySelector('.__abs_country_text').innerHTML;
+					let prPrise = this.closest('.programs_slider_item').querySelector('.programs_slider_pay span').innerHTML;
+					let prTitle = this.closest('.programs_slider_item').querySelector('.programs_info_title').innerHTML;
+					let prText = this.closest('.programs_slider_item').querySelector('.programs_info_text').innerHTML;
+					let prDoclist = this.closest('.programs_slider_item').querySelector('.programs_info_list').innerHTML;
+					let prDate = this.closest('.programs_slider_item').querySelector('.datepr').innerHTML;
+
+
+
+					document.querySelector('.pr-popup .prog-popup-main-image').src = prImage;
+					document.querySelector('.pr-popup .flag-popup img').src = prImageLocation;
+					document.querySelector('.pr-popup .__popup_abs_title').innerHTML = prCountry;
+					document.querySelector('.pr-popup .__popup_abs_price span').innerHTML = prPrise;
+					document.querySelector('.pr-popup .programs_popup_title').innerHTML = prTitle;
+					document.querySelector('.pr-popup .programs_popup_text').innerHTML = prText;
+					document.querySelector('.pr-popup .programs_popup_list').innerHTML = prDoclist;
+					document.querySelector('.pr-popup .programs_popup_term span').innerHTML = prDate;
+
+				})
+			}
+		}
+		else {
+			return;
+		}
+	}
+	prDataLoad();
+
+
+	// data load colledge
+	function prDataKolledge() {
+		let allPrItams = document.querySelectorAll('.university_slider_item');
+		if (allPrItams.length > 0) {
+			for (let i = 0; i < allPrItams.length; i++) {
+				allPrItams[i].addEventListener('click', function () {
+					let clImage = this.querySelector('.university_slider_img img').src;
+					let clName = this.querySelector('.university_slider_title').innerHTML;
+					let clPrice = this.querySelector('.university_slider_pay span').innerHTML;
+					let clText = this.querySelector('.kolledge-text').innerHTML;
+
+
+					document.querySelector('.cl-popup .prog-popup-main-image').src = clImage;
+					document.querySelector('.cl-popup .__popup_abs_title').innerHTML = clName;
+					document.querySelector('.cl-popup .__popup_abs_price span').innerHTML = clPrice;
+					document.querySelector('.cl-popup .programs_popup_text').innerHTML = clText;
+
+
+				})
+			}
+		}
+		else {
+			return;
+		}
+	}
+	prDataKolledge();
+
+	//select docs type
+	function docsTypeChange() {
+		let docsAll = document.querySelectorAll('.doc__claster');
+		let selectBtn = document.querySelectorAll('.doc-select .select-options li');
+		if (docsAll.length > 0) {
+			docsAll[0].classList.add('doc__claster_active')
+			for (let i = 0; i < selectBtn.length; i++) {
+				selectBtn[i].addEventListener('click', function () {
+					let currentData = this.getAttribute('rel')
+					console.log(currentData)
+
+					for (let i = 0; i < docsAll.length; i++) {
+						docsAll[i].classList.remove('doc__claster_active')
+					}
+					docsAll[i].classList.add('doc__claster_active')
+				})
+			}
+		}
+		else {
+			return;
+		}
+	}
+	docsTypeChange();
 
 }, false);
 
