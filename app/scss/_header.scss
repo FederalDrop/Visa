@@ -213,6 +213,7 @@
 
 	.header_mobile {
 		transform: translateY(0);
+		display: block;
 	}
 
 	.__body_down_logo {
@@ -261,6 +262,7 @@
 }
 
 .header_mobile {
+	display: none;
 	position: fixed;
 	padding: 80px 0 0 0;
 	top: 0;
